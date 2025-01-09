@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Crop Recommendation System</h1>
+  </header>
+
+  <main>
+    <section id="map">
+      <h2>Soil & Rainfall Data</h2>
+      <div id="visualization">
+        <!-- Map visualization (can use a placeholder for now) -->
+        <img src="https://via.placeholder.com/600x300" alt="Map Visualization">
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <h2>Crop Recommendations</h2>
+      <div id="recommendation-form">
+        <label for="soil">Select Soil Type:</label>
+        <select id="soil">
+          <option value="loamy">Loamy</option>
+          <option value="clay">Clay</option>
+          <option value="sandy">Sandy</option>
+        </select>
+
+        <label for="region">Select Region:</label>
+        <select id="region">
+          <option value="north">North</option>
+          <option value="south">South</option>
+          <option value="east">East</option>
+          <option value="west">West</option>
+        </select>
+
+        <button id="recommend-btn">Get Recommendations</button>
+      </div>
+
+      <div id="output">
+        <!-- Recommendations will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Crop Recommendation System</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
