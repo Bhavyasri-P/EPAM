@@ -1,9 +1,0 @@
-{
-    "soil_types": ["Loamy", "Clay", "Sandy"],
-    "regions": ["North", "South", "East", "West"],
-    "crops": {
-      "Loamy": { "North": "Wheat", "South": "Rice", "East": "Corn", "West": "Barley" },
-      "Clay": { "North": "Sugarcane", "South": "Paddy", "East": "Soybean", "West": "Cotton" },
-      "Sandy": { "North": "Millet", "South": "Groundnut", "East": "Maize", "West": "Jowar" }
-    }
-  }
