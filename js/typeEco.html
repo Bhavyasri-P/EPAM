@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Type Conversion</title>
+</head>
+<body>
+
+    <script>
+        var a = "99"; // String
+        var b = 99; // Number
+
+        document.write("Type of a: " + typeof(a));
+        document.write("<br><br>");
+
+        document.write("Type of b: " + typeof(b));
+        document.write("<br><br>");
+
+        var c = parseInt(a); // Convert string to number
+        document.write("Type of c (after parseInt): " + typeof(c));
+        document.write("<br><br>");
+
+        var d = String(b); // Convert number to string
+        document.write("Type of d (after String conversion): " + typeof(d));
+    </script>
+
+</body>
+</html>
