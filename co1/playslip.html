@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payslip Calculator</title>
+    <script>
+        function calculatePay() {
+            let daysPresent = document.getElementById("daysPresent").value;
+            let basic = 37900;
+            let salary = (basic / 30) * daysPresent;
+            let dns = salary * 0.09;
+            let hra = 0;
+
+            let residence = document.getElementById("residence").value;
+            if (residence === "hostel") hra = salary * 0.3;
+            else if (residence === "room") hra = salary * 0.2;
+
+            document.getElementById("result").innerHTML = "Total Salary: ₹" + (salary - dns + hra).toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h2>Employee Payslip</h2>
+    <label>Days Present:</label>
+    <input type="number" id="daysPresent" min="1" max="30">
+    <label>Residence:</label>
+    <select id="residence">
+        <option value="hostel">Hostel</option>
+        <option value="room">Room</option>
+        <option value="home">Home</option>
+    </select>
+    <button onclick="calculatePay()">Calculate</button>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <script>
+        function validateForm() {
+            let dob = document.getElementById("dob").value;
+            let year = new Date(dob).getFullYear();
+            if (year > 2005) {
+                alert("Student must be older than 18 years.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        Name: <input type="text" required><br><br>
+        Email: <input type="email" required><br><br>
+        DOB: <input type="date" id="dob" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

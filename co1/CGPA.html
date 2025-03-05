@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGPA Check</title>
+    <script>
+        function checkCGPA() {
+            let cgpa = document.getElementById("cgpa").value;
+            let result = document.getElementById("result");
+            if (cgpa >= 7.2 && cgpa < 7.5) {
+                document.body.style.backgroundColor = "red";
+                result.innerHTML = "Not allowed for placement drive";
+            } else if (cgpa >= 7.5 && cgpa <= 8.5) {
+                document.body.style.backgroundColor = "orange";
+                result.innerHTML = "Maybe placed";
+            } else {
+                document.body.style.backgroundColor = "green";
+                result.innerHTML = "Allowed for placement drive";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Check Placement Eligibility</h2>
+    <input type="number" id="cgpa" step="0.1" placeholder="Enter CGPA">
+    <button onclick="checkCGPA()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
