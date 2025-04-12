@@ -1,0 +1,34 @@
+/* Task 1 Styles */
+#clickButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#clickButton:hover {
+    background-color: #45a049;
+}
+
+/* Task 2 Styles */
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+#mouseoverBox:hover {
+    background-color: lightcoral;
+}
+
+/* Task 3 Styles */
+#keyupInput {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
+}
